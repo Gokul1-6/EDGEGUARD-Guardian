@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EDGEGUARD Guardian</title><link rel="stylesheet" href="/static/app.css"></head>
+<body>
+<header><div><div class="brand">EDGEGUARD</div><div class="sub">AI Privacy & Digital Wellbeing Guardian</div></div><div class="pill">● LOCAL / PROTECTED</div></header>
+<nav>
+<button class="active" data-t="overview">Overview</button><button data-t="ai">AI Activity</button>
+<button data-t="web">Web Activity</button><button data-t="device">Device</button>
+<button data-t="policies">Policies</button><button data-t="schedule">Schedules</button>
+<button data-t="events">Events</button><button data-t="settings">Settings</button>
+</nav>
+<main>
+<section id="overview" class="tab active"><div class="cards">
+<div class="card"><span>AI USAGE</span><b id="aiuse">0m</b><small id="aisvc">No active AI service</small></div>
+<div class="card"><span>PRIVACY POSTURE</span><b id="posture">90</b><small>Local monitoring</small></div>
+<div class="card"><span>BATTERY</span><b id="bat">--</b><small id="power">--</small></div>
+<div class="card"><span>PROCESSES</span><b id="proc">0</b><small>Observable processes</small></div>
+</div>
+<div class="panel"><h2>Live activity</h2><div id="live"></div></div>
+<div class="panel"><h2>Privacy notice</h2><div class="notice">EDGEGUARD observes locally available signals. It does not claim to inspect encrypted traffic or every Windows device-access event. Exact cloud AI model names are shown only when exposed.</div></div>
+</section>
+<section id="ai" class="tab"><div class="panel"><h2>AI services</h2><div id="ailist"></div></div><div class="panel"><h2>Completed AI sessions</h2><div id="sessions"></div></div></section>
+<section id="web" class="tab"><div class="panel"><h2>Recent browser activity</h2><p class="muted">Local browser history where readable; not live packet inspection.</p><div id="weblist"></div></div></section>
+<section id="device" class="tab"><div class="cards">
+<div class="card"><span>MICROPHONE</span><b>MONITORED</b><small>Windows telemetry dependent</small></div>
+<div class="card"><span>CAMERA</span><b>MONITORED</b><small>Windows telemetry dependent</small></div>
+<div class="card"><span>CLIPBOARD</span><b>POLICY</b><small>Pattern classifier hook</small></div>
+<div class="card"><span>PRIVATE FILES</span><b>POLICY</b><small>Best-effort application policy</small></div>
+</div></section>
+<section id="policies" class="tab"><div class="panel"><h2>Access policies</h2>
+<p class="muted">Stored locally. Policy layer; not a kernel security boundary.</p>
+<div class="form"><input id="rt" placeholder="ChatGPT / app / path"><select id="rty"><option value="ai">AI service</option><option value="app">Application</option><option value="private">Private path</option></select><select id="ra"><option>ASK</option><option>BLOCK</option><option>ALLOW</option></select><button onclick="rule()">Add rule</button></div><pre id="rules"></pre></div></section>
+<section id="schedule" class="tab"><div class="panel"><h2>Parent schedules</h2><p class="muted">Set study, rest or bedtime windows.</p>
+<div class="form"><input id="sn" placeholder="Study Time"><input id="ss" type="time" value="18:00"><input id="se" type="time" value="20:00"><select id="sa"><option>ALERT</option><option>ASK</option><option>BLOCK</option></select><button onclick="sched()">Add schedule</button></div><pre id="schedules"></pre></div></section>
+<section id="events" class="tab"><div class="panel"><h2>Security event timeline</h2><button onclick="clearEvents()">Clear local events</button><div id="eventslist"></div></div></section>
+<section id="settings" class="tab"><div class="panel"><h2>Monitoring settings</h2>
+<div class="form"><label>System poll <input id="sp" type="number" min="5" max="300"></label><label>Browser poll <input id="bp" type="number" min="15" max="600"></label><label>Dashboard refresh <input id="dp" type="number" min="2" max="60"></label><button onclick="save()">Save</button></div>
+<div class="notice">Longer intervals reduce background activity. The defaults are intentionally conservative for battery use.</div></div></section>
+</main><footer>EDGEGUARD • Local-first • No mandatory cloud backend</footer>
+<script src="/static/app.js"></script></body></html>

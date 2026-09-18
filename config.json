@@ -1,0 +1,194 @@
+{
+  "alerts": {
+    "notifications_enabled": true,
+    "quiet_end": "07:00",
+    "quiet_hours_enabled": false,
+    "quiet_start": "22:00"
+  },
+  "battery": {
+    "heavy_check_min_interval_seconds": 30,
+    "pause_heavy_checks_on_battery": true
+  },
+  "monitoring": {
+    "browser_history_poll_seconds": 30,
+    "dashboard_refresh_seconds": 5,
+    "system_poll_seconds": 10
+  },
+  "policies": {
+    "ai_service_default": "ASK",
+    "clipboard_sensitive_default": "ASK",
+    "private_folder_default": "BLOCK"
+  },
+  "rules": [],
+  "schedules": [
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "action": "ALERT",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "end": "20:00",
+      "name": "",
+      "start": "18:00"
+    },
+    {
+      "name": "",
+      "start": "18:00",
+      "end": "20:00",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "action": "ASK"
+    },
+    {
+      "name": "",
+      "start": "18:00",
+      "end": "20:00",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "action": "ASK"
+    },
+    {
+      "name": "",
+      "start": "18:00",
+      "end": "20:00",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "action": "ASK"
+    }
+  ],
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8765
+  }
+}
